@@ -1,0 +1,847 @@
+:root{
+  --white: #FFFFFF;
+  --hard-white:#EEEEEE;
+  --blue: #2196F3;
+  --hard-bule: #188CE8;
+  --black: #212121;
+  --gray: #757575;
+  --hard-gray:#2F303A;
+  --light-gray:#F5F4FA;
+  --lite-gray:#ECECEC;
+}
+
+
+
+
+
+
+body{
+
+  font-family:'Roboto',sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+
+
+
+background: var(--white);
+}
+
+
+
+
+.container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+display: flex;
+}
+ 
+
+h1, h2, h3, h4, h5, h6, p, ul {margin: 0; padding: 0;}
+img {display: block;}
+
+
+*,
+*::before 
+*::after{box-sizing:border-box}
+
+/*Портфоліо*/
+
+li{
+  list-style-type: none;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+
+.portfolio_hav_about{
+color: var(--gray);
+}
+
+button{
+  border: none;
+}
+
+.header_container_portfolio{
+  
+  border-bottom:  1px solid var(--lite-gray);
+  display: flex;
+  
+  background: var(--white);
+  }
+
+
+.logo_link{
+  display: inline-block;
+  padding-top: 24px;
+padding-bottom: 24px;
+
+  margin: 0px 93px 0px 0px;
+ 
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+font-size:26px;
+line-height: 1.19;
+
+color: var(--black);
+ }
+ 
+ .logo-header{
+  
+
+
+   font-family: 'Raleway',sans-serif;
+   font-weight: 700;
+ font-size: 26px;
+ line-height:1.19;
+ 
+ color: var(--blue);
+ letter-spacing: 0.03em;
+ }
+ 
+
+
+ .navigation{
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height:1.14;
+  
+  
+  color: var(--black);
+  letter-spacing: 0.02em;
+ }
+ 
+ .about_navigation:not(:first-child){
+  
+  margin-left: 50px;
+
+ }
+ 
+ 
+ 
+
+ 
+ /*mail*/
+ .nav_mail_tel{
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--gray);
+ }
+
+
+.nav_contacts{
+ 
+ 
+ 
+ 
+   font-weight: 500;
+ font-size: 14px;
+ line-height:1.14;
+ 
+ 
+ 
+ letter-spacing: 0.02em;
+}
+
+.nav_contacts:not(:first-child){
+ 
+  margin-left: 50px;
+}
+
+
+.icon_nav{
+
+  float: left;
+   width: 16px;
+   height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  
+  }
+
+
+
+
+
+/*----------------------------------------*/
+
+/*Section*/
+.container_portfolio_section{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.portfolio_section{
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+}
+/*cayboard*/
+
+.keyboard{
+display: flex;
+justify-content: center;
+gap: 8px;
+margin-bottom: 50px;
+}
+
+.about_button{
+  padding: 6px 25px 6px 25px;
+
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+line-height:1.6;
+text-align: center;
+
+
+cursor: pointer;
+color: var(--black);
+background: var(--light-gray);
+border-radius: 4px;
+
+}
+
+
+
+/*------------------------------------------------------*/
+
+/*billboard*/
+.billboard{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;}
+
+.portfolio_item{
+  flex-basis: calc((100% - 30px * 2 ) / 3);
+  
+  
+  
+  
+}
+
+.margin_item{
+  margin-bottom: 4px;
+
+  font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+
+
+letter-spacing: 0.06em;
+
+color: var(--black);
+}
+
+.portfolio_hav_about{
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+
+
+letter-spacing: 0.03em;
+
+color: var(--gray);
+}
+
+
+.padding_item{
+  
+  border-left:1px solid var(--hard-white) ;
+  border-bottom:1px solid var(--hard-white) ;
+  border-right:1px solid var(--hard-white) ;
+  padding: 20px 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer_studio{
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  
+font-size:26px ;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--white);
+}
+
+.logo_footer{
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  
+font-size:26px ;
+line-height: 1.19;
+letter-spacing: 0.03em;
+  color: var(--blue);
+}
+
+.info_adres{
+  font-weight: 400;
+  font-size: 14px;
+line-height:1.14;
+letter-spacing: 0.03em;
+
+color: var(--white);
+}
+
+.main_about{
+  font-weight: 400;
+  font-size: 14px;
+line-height:1.14;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+}
+
+.tell_about{
+  font-weight: 400;
+  font-size: 14px;
+line-height:1.14;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+}
+/*--------------------------------------------------*/
+
+
+
+/*index*/
+/*Верхня лінія*/
+.header_container{
+
+display: flex;
+
+background: var(--white);
+}
+
+.about_nav{
+display: flex;
+}
+
+
+ .index_ul{
+  display: flex;
+ }
+
+ .index_ull{
+margin-left: auto;
+display: flex;
+
+
+ }
+
+
+ 
+ 
+
+
+/*bg*/
+
+
+.container_bg{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bg{
+  background: var(--hard-gray);
+  max-width: 1600px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
+ background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);             
+ background-position:center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ }
+
+ 
+ .index_bisnes{
+  width: 696px;
+  
+ 
+margin-left: auto;
+margin-right: auto;
+
+   font-weight: 900;
+ font-size: 44px;
+ line-height: 1.36;
+ text-align: center;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+ color: var(--white);
+ }
+ 
+ .index_btn{
+display: block;
+margin-top: 30px;
+
+margin-left: auto;
+margin-right: auto;
+
+padding: 10px 32px 10px 32px;
+ font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height:1.8;
+
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+   color: var(--white);
+ 
+   cursor: pointer;
+ 
+ 
+ 
+   
+   background: var(--blue);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+ }
+/*-----------------------------*/
+
+
+/*НАШІ ОСОБЛИВОСТІ*/ 
+
+.index_about_us_li{
+  width: 270px;
+}
+
+ .index_about_hav{
+  
+ padding-top: 94px;
+
+ 
+ }
+
+ .visually-hidden{
+ 
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;}
+
+ .index_abour_uss{
+  display: flex;
+  gap: 30px;
+ }
+
+
+
+.rectangle{
+  width: 270px;
+  margin-bottom: 30px;
+ gap: 30px;
+  background: var(--light-gray);
+border-radius: 4px;
+
+}
+
+
+
+
+
+
+
+ .index_details{
+  margin-bottom: 10px;
+  font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--black);
+ }
+
+ .index_description{
+  
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+
+letter-spacing: 0.03em;
+
+color: var(--gray);
+ }
+
+
+/*----------------------*/
+
+/*images*/
+.container_images{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.index_about_work{
+  
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
+
+ .index_hav_one{
+
+text-align: center;
+
+
+margin-bottom: 50px;
+    
+      font-weight: 700;
+          letter-spacing: 0.03em;
+           
+      font-size: 36px;
+   line-height:42.19px;
+   
+      color: var(--black);
+   }
+
+
+.index_images{
+  display: flex;
+  gap: 30px;
+}
+
+
+
+/*---------------*/
+
+
+/*Наша команда*/
+.index_team{
+  
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: var(--light-gray);}
+
+
+   .index_hav_two{
+    text-align: center;
+margin-bottom: 50px;
+
+    font-weight: 700;
+    letter-spacing: 0.03em;
+   font-size: 36px;
+  line-height:42.19px;
+  text-align: center;
+      color: var(--black);
+  }
+
+  .container_team{
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+ 
+
+  .index_my_team{
+    display: flex;
+    gap: 30px;
+  }
+
+ .team_name{
+  margin-bottom: 10px;
+  font-size: 16px;
+
+
+ }
+
+
+/*IGOR*/
+ .backgound_team{
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+
+    
+  background: var(--white);
+}
+
+.div_team{
+ padding: 30px;
+ }
+ .team_name{
+  margin-bottom: 10px;
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--black);
+ }
+
+ .team_responsibilitiesr{
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--gray);
+ }
+
+ 
+/*------------------------------------------*/
+
+ 
+
+ 
+ /*Footer*/
+ .container_footer_div{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+ .footer_container{
+  
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+   
+   
+   
+   background:var(--hard-gray);
+   }
+
+
+
+ .logo_footer{
+           
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height:1.19;
+  letter-spacing: 0.03em;
+  color: var(--blue);
+}
+
+.footer_studio{
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 20px;
+   
+
+
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height:1.19;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  }
+
+ 
+.index_ul_adres{
+  margin-top: 20px;
+}
+ 
+ 
+   .tell_about{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+
+letter-spacing: 0.03em;;
+     
+     color: rgba(255, 255, 255, 0.6);
+     }
+ 
+     .main_about{
+       letter-spacing: 0.03em;
+ 
+       font-weight: 400;
+ 
+       font-size: 14px;
+       line-height: 2;
+       
+       color: rgba(255, 255, 255, 0.6);
+       }
+ 
+       .info_adres{
+
+     
+      margin-bottom: 9px;
+        
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+     
+      
+      letter-spacing: 0.03em;
+         
+         color: var(--white);
+         }
+ 
+
+
+
+ 
+               
+
+                .main_about_footer{
+                 
+                  margin-bottom: 9px;
+                  
+
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 24px;
+                  
+                  
+                  letter-spacing: 0.03em;
+                  
+                  color: rgba(255, 255, 255, 0.6);
+                }
+
+                .tell_about_footer{
+
+                  margin-top: 9px;
+                  
+
+                  letter-spacing: 0.03em;
+ 
+                  font-weight: 400;
+              
+                  font-size: 14px;
+                  line-height:2;
+                  
+                  color: rgba(255, 255, 255, 0.6);
+                }
+
+
+                .index_footer_li:not(:last-child) {
+                  margin-bottom: 9px;
+                }
+/*Ховери*/
+
+  
+
+.index_btn:hover, .index_btn:focus{
+  background-color: var(--blue);
+  color: var(--white);
+  background-color: var(--hard-bule);
+}
+
+
+
+.navigation:hover, .navigation:focus{
+border-color: var(--black);
+color: var(--blue);
+
+}
+
+
+
+.nav_mail_tel:hover, .nav_mail_tel:focus{
+border-color: var(--gray);
+color: var(--blue);
+
+}
+
+
+
+
+
+.about_button:hover, .about_button:focus{
+  
+border-color: var(--black);
+background-color: var(--blue) ;
+color: var(--white);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
+}
+
+
+
+
+
+.info_adres:hover, .info_adres:focus{
+  border-color: var(--black);
+  color: var(--blue);
+  
+}
+
+.main_about:hover, .main_about:focus{
+  border-color: var(--black);
+  color: var(--blue);
+  
+}
+
+.tell_about:hover, .tell_about:focus{
+  border-color: var(--black);
+  color: var(--blue);
+  
+}
+
