@@ -8,6 +8,7 @@
   --hard-gray:#2F303A;
   --light-gray:#F5F4FA;
   --lite-gray:#ECECEC;
+  --social-gray:#AFB1B8;
 }
 
 
@@ -169,6 +170,14 @@ color: var(--black);
   
   }
 
+  .icon_nav_tel{
+    margin-left: 30px;
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    float: left;
+    fill: currentColor;
+  }
 
 
 
@@ -471,16 +480,25 @@ padding: 10px 32px 10px 32px;
   gap: 30px;
  }
 
-
-
-.rectangle{
+.background-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  background: var(--light-gray);
   width: 270px;
+  height: 120px;
   margin-bottom: 30px;
  gap: 30px;
-  background: var(--light-gray);
+ 
 border-radius: 4px;
 
+
 }
+
+
+
+ 
 
 
 
@@ -602,6 +620,30 @@ margin-bottom: 50px;
 
  }
 
+ /*SOCIAL LINKS*/
+.social{
+  display: flex;
+  gap: 10px;
+  
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.social_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.social_icon{
+  fill: var(--social-gray);
+}
+
+/*-------------------------------------------------------------*/
 
 /*IGOR*/
  .backgound_team{
@@ -648,10 +690,53 @@ color: var(--gray);
 /*------------------------------------------*/
 
  
+/*FOOTER SOCIAL ICON*/
 
+.footer_header{
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 16.41px;
+
+
+  font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--white);
+
+}
+
+.ul_social{
+  display: flex;
+  
+  gap: 10px;
+}
+
+
+.footer_social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.footer_icon{
+  fill: var(--white);
+}
+
+
+/*--------------------------------------------*/
  
  /*Footer*/
  .container_footer_div{
+  
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
@@ -845,3 +930,22 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
   
 }
 
+.social_link:hover,
+.social_link:focus{
+  background-color: var(--blue);
+}
+
+.social_link:hover .social_icon,
+.social_link:focus .social_icon{
+  fill: var(--white);
+}
+
+.footer_social:hover,
+.footer_social:focus{
+  background-color: var(--blue);
+}
+
+.footer_social:hover .footer_icon,
+.footer_social:focus .footer_icon{
+  fill: var(--white);
+}
