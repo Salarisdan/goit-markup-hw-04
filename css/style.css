@@ -242,9 +242,14 @@ border-radius: 4px;
 .portfolio_item{
   flex-basis: calc((100% - 30px * 2 ) / 3);
   
-  
-  
-  
+}
+
+.wrap{
+  display: block;
+}
+
+.galery_link{
+  text-decoration: none;
 }
 
 .margin_item{
@@ -689,11 +694,75 @@ color: var(--gray);
  
 /*------------------------------------------*/
 
+/*ПОСТІЙНІ КЛІЄНТИ*/
+.section{
+  
+  padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container_client{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section_tittle{
+  text-align: center;
+    margin-bottom: 50px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--black);
+}
+
+.client_list{
+  display: flex;
+    gap: 30px;
+}
+
+.client_item{
+  display: list-item;
+  text-align: -webkit-match-parent;
+
+}
+
+.client_link{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-gray);
+    border-radius: 4px;
+}
+
+.client_icon{
+  fill: var(--social-gray);
+}
+
+
+
+
+
+
+
  
 /*FOOTER SOCIAL ICON*/
+.footer_socials{
+  display: block;
+}
 
 .footer_header{
-  display: flex;
+  display: block;
+ 
   margin-bottom: 20px;
   line-height: 16.41px;
 
@@ -735,18 +804,27 @@ color: var(--white);
 /*--------------------------------------------*/
  
  /*Footer*/
- .container_footer_div{
-  
+.other_footer{
+  display: flex;
+  align-items: baseline;
+
+}
+
+.container{
   width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .container_footer_div{
+  margin-right: 70px;
+ 
  }
 
  .footer_container{
-  
-
+ 
   padding-top: 60px;
   padding-bottom: 60px;
    
@@ -909,6 +987,13 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 
+.galery_link:hover .wrap,
+.galery_link:focus .wrap{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+
 
 
 
@@ -948,4 +1033,13 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .footer_social:hover .footer_icon,
 .footer_social:focus .footer_icon{
   fill: var(--white);
+}
+
+.client_link:hover,
+.client_link:focus {
+  border: 1px solid var(--blue);
+}
+.client_link:hover .client_icon,
+.client_link:focus .client_icon {
+  fill: var(--blue);
 }
